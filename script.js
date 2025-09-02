@@ -24,13 +24,15 @@ for (const callBtn of callBtns) {
             alert("😪 Sorry! You don't have enough coins")            
         }
         else {
+
+            //alert section
+            const serviceName = event.target.parentNode.parentNode.querySelector('.service-name').innerText;
+            const serviceNo = event.target.parentNode.parentNode.querySelector('.call-Num').innerText;
+                alert("📞 Calling " + serviceName + ' ' + serviceNo);
+
             document.getElementById('coin-count').innerText = coinCount - 20;
             
             
-        //alert section
-        const serviceName = event.target.parentNode.parentNode.querySelector('.service-name').innerText;
-        const serviceNo = event.target.parentNode.parentNode.querySelector('.call-Num').innerText;
-            alert("📞 Calling " + serviceName + ' ' + serviceNo);
             
             // history finctionalities 
             const callingData = {
