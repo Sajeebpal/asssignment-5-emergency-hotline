@@ -3,3 +3,7 @@
 .hind-madurai-regular {
   font-family: "Hind Madurai", sans-serif;
 }
+
+button i, div i{
+  pointer-events: none;
+}
